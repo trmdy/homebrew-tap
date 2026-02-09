@@ -6,7 +6,8 @@ class Sv < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      ~124c01bdd0b459cda3d744c7007aa058a1dd669f769bf148fe9eddf64246d6"
+      url "https://github.com/trmdy/sv/releases/download/v#{version}/sv-aarch64-apple-darwin.tar.gz"
+      sha256 "124c01bdd0b459cda3d744c7007aa058a1dd669f769bf148fe9eddf64246d6be"
     else
       url "https://github.com/trmdy/sv/releases/download/v#{version}/sv-x86_64-apple-darwin.tar.gz"
       sha256 "d5c9200b8ce6c4b34cb1eefeb1153953653e0daebcdd063973610c43d2110b10"
