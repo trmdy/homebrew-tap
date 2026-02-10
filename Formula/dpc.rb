@@ -7,10 +7,10 @@ class Dpc < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/trmdy/design-parity-checker/releases/download/v#{version}/dpc-aarch64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_UPDATE_AFTER_RELEASE"
+      sha256 "c3b311546a0601bbfc1a404fe69b51a7a07e4b5af04ef88ed32f06e8a4dd7913"
     else
       url "https://github.com/trmdy/design-parity-checker/releases/download/v#{version}/dpc-x86_64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_UPDATE_AFTER_RELEASE"
+      sha256 "45ff0a098a08c07e011abb7a5df4c2a610031d35f3738f7feb05fda94587b624"
     end
   end
 
@@ -22,4 +22,3 @@ class Dpc < Formula
     system "#{bin}/dpc", "--help"
   end
 end
-
