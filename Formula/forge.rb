@@ -2,15 +2,15 @@ class Forge < Formula
   desc "Control plane for running and supervising AI coding agents"
   homepage "https://github.com/trmdy/forge"
 
-  version "0.1.3"
+  version "0.3.0-alpha.5"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/trmdy/forge/releases/download/v#{version}/forge_#{version}_darwin_arm64.tar.gz"
-      sha256 "4f3c360566a36c96f5cc5773aed2f680c9e7fd85e259d02476ce29f17db7ef1c"
+      sha256 "578c2abfff59032c1e29382229295a789b967e19af5353de040b3953bcb8a9c9"
     else
       url "https://github.com/trmdy/forge/releases/download/v#{version}/forge_#{version}_darwin_amd64.tar.gz"
-      sha256 "f03cc63727ebebb210db35d6a1cf0eede2ef7312b1e539e5f4e6d0aad4b027c1"
+      sha256 "02b592466cd3f20c82ccc8a8bf5198fd2040e9fe2ecffa10d872c0dcd0d951f1"
     end
   end
 
